@@ -14,7 +14,7 @@ const teamMembers = [
     {
         name: "Walter Gordon" ,
         role: "Office Manager",
-        Image: " walter-gordon-office-manager.jpg"
+        Image: "walter-gordon-office-manager.jpg"
     },
     {
         name: "Angela Lopez" ,
@@ -29,15 +29,31 @@ const teamMembers = [
     {
         name: "Barbara Ramos" ,
         role: "Graphic Designer",
-        Image: " barbara-ramos-graphic-designer.jpg"
+        Image: "barbara-ramos-graphic-designer.jpg"
     }
 ]
 
 // stampo l'array di oggetti 
 
-// console.log(teamMembers);
+console.log(teamMembers);
+
 let curMember ="";
 for (let i = 0; i < teamMembers.length; i++) {
     const curMember = teamMembers[i];
-    console.log(curMember);
+    console.log(curMember.name);
+
+    const rowElem = document.getElementById("row")
+rowElem.innerHTML +=
+ `<div class="col-4">
+    <div class="card">
+        <img src="img/${curMember.Image}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+            <h5 class="card-title">${curMember.name}</h5>
+            <p class="card-text">${curMember.role}</p>
+        </div>
+    </div>
+ </div>`
 }
+
+
+ 

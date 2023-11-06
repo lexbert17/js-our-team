@@ -22,3 +22,5 @@ Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente c
 ### Svolgimento
 1. Creo array di oggetti
 2. stampo su console log le informazione dell' oggetto
+3. con il ciclo for prelevo i dati di ogni oggetto
+4. creo elemento e lo stampo su html
